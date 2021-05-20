@@ -9,7 +9,8 @@
     {mod, {emysql_app, ["%MAKETIME%"]}},
     {registered, [emysql_conn_mgr, emysql_sup]},
     {applications, [kernel, stdlib, crypto]},
-    {env, [
-      {default_timeout, 5000},
-      {conn_test_period, 28000}]}
+    {env, [{default_timeout, 5000}, {conn_test_period, 28000}]},
+    {licenses, ["Apache 2.0"]},
+    {links, [{"GitHub", "https://github.com/aijingsun6/emysql.git"}]},
+    {files,["doc","etc","include","priv","samples","src","support","t","test"]}
 ]}.
